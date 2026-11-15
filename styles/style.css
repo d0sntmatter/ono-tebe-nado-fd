@@ -6,8 +6,6 @@
 }
 
 .header__menu-link {
-    width: 391px;
-    height: 22px;
     font-size: 18px;
     font-style: normal;
 }
@@ -16,7 +14,6 @@
     width: 391px;
     height: 22px; 
     display: flex;
-    align-items: flex-start;
     gap: 32px;
     list-style: circle;
     padding: 0;
@@ -24,6 +21,10 @@
     text-decoration-skip-ink: none;
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
+}
+
+.header__links-list-item_active {
+    list-style: none;
 }
 
 .header__logo {
@@ -44,6 +45,7 @@
     text-decoration-skip-ink: none;
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
+    gap: 4px;
 }
 
 .cover {
@@ -51,11 +53,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background: url("../images/cover.jpg") no-repeat center / cover;
+    box-sizing: border-box;
+    width: 1100px;
     min-height: 757px;
-    padding: 50px;
-    padding-top: 165px;
-    margin-bottom: 172px;
+    padding: 165px 50px 50px;
+    margin: 0 auto 172px auto;
 }
     
 .overlay {
@@ -65,7 +69,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -73,9 +77,13 @@
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    font-style: bold;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
     color: #fff;
-    letter-spacing: 30%;
+    letter-spacing: 30px;
+    line-height: 1.15;
     z-index: 2;
 }
 
@@ -103,11 +111,12 @@
 .cover__description {
     position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     color: #fff;
     text-transform: uppercase;
     font-size: 22px;
-    z-index: 1;
+    z-index: 2;
     gap: 110px;
 }
 
@@ -130,7 +139,7 @@
 }
 
 .lots {
-    margin-bottom: 172px;
+    margin-bottom: 150px;
 }
 
 .card-link {
@@ -149,7 +158,6 @@ article {
 .lots__heading {
     font-size: 40px;
     font-weight: 700;
-    font-style: bold;
     text-transform: uppercase;
     padding-left: 64px;
     padding-bottom: 30px;
@@ -173,7 +181,6 @@ article {
 
 .card__title {
     font-weight: 700;
-    font-style: bold;
     font-size: 22px;
     margin: 48px 0 0 0;
     text-align: left;
@@ -231,4 +238,106 @@ article {
     font-size: 20px;
     padding-left: 65px;
     margin-top: 30px; 
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    margin: 0 auto 80px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 25px;
+    margin-right: 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 92px 50px 96px 50px;
+}
+
+.footer__address {
+    display: flex;
+    width: 240px;
+    height: 98px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: start;
+    align-self: center;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    gap: 4px;
+}
+
+.footer__menu {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
 }
