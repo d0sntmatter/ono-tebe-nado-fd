@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px 50px;
+    padding: 90px 50px 90px 50px;
 }
 
 .header__menu-link {
@@ -19,8 +19,8 @@
     padding: 0;
     margin: 0;
     text-decoration-skip-ink: none;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 
 .header__links-list-item_active {
@@ -43,9 +43,9 @@
     font-style: normal;
     font-size: 18px;
     text-decoration-skip-ink: none;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
-    gap: 4px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    line-height: 24.3px;
 }
 
 .cover {
@@ -53,13 +53,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     background: url("../images/cover.jpg") no-repeat center / cover;
     box-sizing: border-box;
     width: 1100px;
     min-height: 757px;
-    padding: 165px 50px 50px;
-    margin: 0 auto 172px auto;
+    padding: 165px 50px 50px 50px;
+    margin: 0 auto 180px auto;
 }
     
 .overlay {
@@ -76,6 +75,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    font-size: 100px;
+    gap: 20px;
     text-transform: uppercase;
     width: 100%;
     margin: 0;
@@ -88,46 +89,42 @@
 }
 
 .aligned-text_left {
-    font-weight: 700;
-    font-size: 100px;
+    display: block;
 }
 
 .aligned-text_center {
+    display: block;
     text-align: center;
-    font-weight: 700;
-    font-size: 100px;
+    padding-left: 30px;
 }
 
 .aligned-text_right {
-    text-align: right;
-    font-weight: 700;
-    font-size: 100px;
-}
-
-.aligned-text {
     display: block;
+    text-align: right;
+    margin-right: -30px;
 }
 
 .cover__description {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     color: #fff;
     text-transform: uppercase;
     font-size: 22px;
+    margin: 0;
     z-index: 2;
-    gap: 110px;
 }
 
 .cover__description__text {
     word-spacing: 18px;
+    margin: 0;
 }
 
 .bet-button {
     border: none;
     background: transparent;
-    padding: 13px 29px;
+    padding: 12px 32px;
     margin: 0;
     border: 1px solid #fff;
     color: #fff;
@@ -135,7 +132,7 @@
     font-size: 22px;
     font-weight: 400;
     cursor: pointer;
-    outline: none
+    outline: none;
 }
 
 .lots {
@@ -159,8 +156,7 @@ article {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-left: 64px;
-    padding-bottom: 30px;
+    padding-left: 65px;
 }
 
 .lots__card-list {
@@ -169,14 +165,15 @@ article {
     gap: 25px;
     list-style: none;
     color: #fff;
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
 }
 
 .lots__card-list-item {
     display: flex;
     flex-direction: column;
     width: 334px;
-    min-height: 596px;
+    min-height: 598px;
 }
 
 .card__title {
@@ -237,14 +234,16 @@ article {
     display: flex;
     font-size: 20px;
     padding-left: 65px;
-    margin-top: 30px; 
+    margin-top: 30px;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
 }
 
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
-    margin: 0 auto 80px;
-    padding: 0 24px;
+    margin: 0 auto 170px;
+    padding: 0 25px;
     box-sizing: border-box;
 }
 
@@ -271,7 +270,7 @@ article {
 }
 
 .about__title {
-    margin-top: 100px;
+    margin-top: 105px;
     margin-bottom: 100px;
     margin-left: 25px;
     margin-right: 0;
@@ -293,47 +292,42 @@ article {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding: 92px 50px 96px 50px;
+    align-items: start;
+    padding: 15px 50px;
+    margin: 0 0 88px 0;
 }
 
 .footer__address {
     display: flex;
-    width: 240px;
+    width: 265px;
     height: 98px;
     flex-direction: column;
-    align-items: flex-start;
-    justify-self: start;
-    align-self: center;
     font-style: normal;
     font-size: 18px;
     text-decoration-skip-ink: none;
     text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
-    gap: 4px;
+    text-underline-offset: 4px;
+    line-height: 24.3px;
 }
 
 .footer__menu {
     font-size: 18px;
     font-style: normal;
+    text-underline-offset: 4px;
 }
 
 .footer__menu-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    margin: 0;
     list-style: none;
 }
 
 .footer__social-list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: end;
     list-style: none;
-    padding: 0;
-    margin: 0;
     gap: 50px;
 }
 
