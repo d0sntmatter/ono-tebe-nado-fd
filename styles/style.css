@@ -126,7 +126,7 @@
     background: transparent;
     padding: 12px 32px;
     margin: 0;
-    border: 1px solid #fff;
+    border: 1px solid;
     color: #fff;
     text-transform: uppercase;
     font-size: 22px;
@@ -140,7 +140,6 @@
 }
 
 .card-link {
-    display: block;
     height: 100%;
     text-decoration: none;
     position: relative;
